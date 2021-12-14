@@ -844,7 +844,7 @@ address{
     color: var(--primary-text-color);
 }
 
-.checkbox:checked + .policy .modal__svg{
+.checkbox:checked + .policy .modal__chek{
     background: var(--accent-color);
     border: 0;
 }
@@ -856,7 +856,7 @@ address{
     text-align: center;
 }
 
-.modal__svg{
+.modal__chek{
     width: 16px;
     height: 15px;
     display: flex;
