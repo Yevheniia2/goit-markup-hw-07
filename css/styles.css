@@ -88,13 +88,7 @@ nav{
     margin-left: 0;
 }
 .logo__blue{
-    font-family: Raleway,sans-serif;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
     color:var(--accent-color);
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 
 .site-nav{
@@ -134,11 +128,11 @@ nav{
     padding-bottom: 32px;
 }
 
-.current{
+.site-nav__link--current{
     color: var(--accent-color);
 }
 
-.current::after{
+.site-nav__link--current::after{
     position: absolute;
     display: block;
     content: "";
@@ -192,7 +186,7 @@ nav{
 
 /* Hero styles */
 
-.hero-section{
+.section__hero{
     text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
     background-repeat: no-repeat;
@@ -201,9 +195,10 @@ nav{
     padding: 200px 0;
     margin: 0 auto;
     max-width: 1600px;
+    min-height: 600px;
 }
 
-.hero-title{
+.hero__title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -216,11 +211,12 @@ nav{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    margin-top: 106px;
 }
 
-.hero-button,
-.hero-button:hover,
-.hero-button:focus{
+.hero__button,
+.hero__button:hover,
+.hero__button:focus{
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -244,11 +240,6 @@ nav{
 
 .section{
     padding: 94px 0 94px 0;
-}
-
-.features-container{
-    width: 1200px;
-    margin: 0;
 }
 
 .features{
@@ -486,27 +477,23 @@ img{
 
 /* Footer styles */
 
-.footer{
-    display: flex;
-}
-
-.footer-content{
-    display: flex;
-    align-items: baseline;
-}
-
-.footer-container{
+.section__footer{
     background-color: var(--hero-background-color);
     padding: 60px 0;
     max-width: 1600px;
     margin: auto;
 }
 
+.footer{
+    display: flex;
+    align-items: baseline;
+}
+
 .footer-contacts{
     flex-grow: 1;
 }
 
-.footer__logo{
+.footer-logo{
     font-family: Raleway,sans-serif;
     font-size: 26px;
     line-height: 1.19;
@@ -515,11 +502,7 @@ img{
 }
 
 
-.logo__white{
-    font-family: Raleway,sans-serif;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
+.footer-logo__white{
     color:var(--primary-white-color);
 }
 
