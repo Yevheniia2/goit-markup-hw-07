@@ -9,12 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
     <title>Студия</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"  />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
     <!-- Хедер -->
-    <header class="header-container">
-        <div class="container">
+    <header class="header">
+        <div class="container header__container">
             <nav>
                 <a class="logo" href="#"><span class="logo__blue">Web</span>Studio</a>
                 <ul class="site-nav">
@@ -87,9 +87,9 @@
             </div>
         </section>
         <!-- Секция чем мы занимаемся -->
-        <section class="section our-profile__section">
+        <section class="section section--without-padding-top">
             <div class="container">
-                <h2 class="our-profile__second-title">Чем мы занимаемся</h2>
+                <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="our-profile">
                     <li class="our-profile__images"><img  src="./images/coding.jpg"  alt="Разработчик набирает код"  width="370"/>
                         <p class="our-profile__text">Десктопные приложения</p>
@@ -104,14 +104,14 @@
             </div>
         </section>
         <!-- Секция команда -->
-        <section class="section our-team__section">
+        <section class="section section--dark-background">
             <div class="container">
-                <h2 class="our-team__title">Наша команда</h2>
+                <h2 class="section__title">Наша команда</h2>
                 <ul class="our-team">
                     <li class="our-team__item">
                         <img src="./images/product-designer.jpg" alt="Дизайнер продукта" width="270"/>
-                        <div class="our-team__item-inscription">
-                            <h3 class="our-team__item-title">Игорь Демьяненко</h3>
+                        <div class="our-team__inscription">
+                            <h3 class="our-team__title">Игорь Демьяненко</h3>
                             <p class="our-team__text">Product Designer</p>
                             <ul class="social-media">
                                 <li class="social-media__item">
@@ -147,8 +147,8 @@
                     </li>
                     <li class="our-team__item">
                         <img src="./images/frontend-developer.jpg" alt="Фронтенд-разработчик" width="270"/>
-                        <div class="our-team__item-inscription">
-                            <h3 class="our-team__item-title">Ольга Репина</h3>
+                        <div class="our-team__inscription">
+                            <h3 class="our-team__title">Ольга Репина</h3>
                             <p class="our-team__text">Frontend Developer</p>
                             <ul class="social-media">
                                 <li class="social-media__item">
@@ -184,8 +184,8 @@
                     </li>
                     <li class="our-team__item">
                         <img src="./images/marketing.jpg" alt="Маркетолог" width="270"/>
-                        <div class="our-team__item-inscription">
-                            <h3 class="our-team__item-title">Николай Тарасов</h3>
+                        <div class="our-team__inscription">
+                            <h3 class="our-team__title">Николай Тарасов</h3>
                             <p class="our-team__text">Marketing</p>
                             <ul class="social-media">
                                 <li class="social-media__item">
@@ -221,8 +221,8 @@
                     </li>
                     <li class="our-team__item">
                         <img src="./images/ui-designer.jpg" alt="Дизайнер пользовательского интерфейса" width="270"/>
-                        <div class="our-team__item-inscription">
-                            <h3 class="our-team__item-title">Михаил Ермаков</h3>
+                        <div class="our-team__inscription">
+                            <h3 class="our-team__title">Михаил Ермаков</h3>
                             <p class="our-team__text">UI Designer</p>
                             <ul class="social-media">
                                 <li class="social-media__item">
@@ -261,7 +261,7 @@
         </section>
         <section class="section">
             <div class="container">
-                <h2 class="regular-customers__title">Постоянные клиенты</h2>
+                <h2 class="section__title">Постоянные клиенты</h2>
                 <ul class="regular-customers">
                     <li class="regular-customers__item">
                         <a class="regular-customers__link" href="#">

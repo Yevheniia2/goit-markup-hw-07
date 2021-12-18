@@ -54,7 +54,7 @@ img{
 
 /* Header styles */
 
-.header-container{
+.header{
     max-width: 1600px;
     margin: auto;
     border-bottom: 1px solid #ECECEC;
@@ -285,11 +285,11 @@ nav{
 
 /* Our profile section styles */
 
-.our-profile__section{
+.section--without-padding-top{
     padding-top: 0;
 }
 
-.our-profile__second-title{
+.section__title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -336,7 +336,7 @@ img{
 
 /* Our team section styles*/
 
-.our-team__section{
+.section--dark-background{
     background-color: var(--button-backgroung-color);
 }
 
@@ -364,11 +364,11 @@ img{
     margin-bottom: 50px;
 }
 
-.our-team__item-inscription{
+.our-team__inscription{
     padding: 30px 0 30px;
 }
 
-.our-team__item-title{
+.our-team__title{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
