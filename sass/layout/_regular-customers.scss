@@ -1,0 +1,45 @@
+.regular-customers__title{
+    @include font(36px, 700, 1.17, 0.03em);
+    text-align: center;
+    color: var(--title-text-color);
+}
+.regular-customers{
+    @extend %align-list;
+    margin-top: 50px;
+}
+
+.regular-customers__item{
+    @extend %align-list;
+    width: 170px;
+    height: 92px;
+    @include bordered(1px, #AFB1B8);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-property: border-color;
+    @extend %transition;
+ &:hover,
+ &:focus{
+    border-color: var(--accent-color);
+ }
+ &:not(:last-child){
+    margin-right: 30px;
+ }
+}
+
+.regular-customers__link{
+    @extend %align-list;
+    width: 100%;
+    height: 100%;
+    color: var(--main-icon-color);
+    transition-property: color;
+    @extend %transition;
+ &:hover,
+ &:focus{
+    color: var(--accent-color);
+ }
+}
+
+.regular-customers__icon{
+    fill: currentColor;
+}

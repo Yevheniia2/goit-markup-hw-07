@@ -1,0 +1,41 @@
+.subscribe{
+    margin-left: 93px;
+}
+
+.subscribe__form{
+    display: flex;
+    margin-top: 20px;
+}
+
+.subscribe__title{
+    @include font(14px, 700, 1.14, 0.03em);
+    font-style: normal;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.subscribe__input{
+    @include font(16px, 400, 1.25, 0.03em);
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    @include bordered(1px, rgba(255, 255, 255, 0.3));
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--hero-background-color);
+    outline: none;
+    transition-property: border-color;
+    @extend %transition;
+ &:focus{
+    border-color: var(--accent-color);
+ }
+}
+
+.subscribe__button-send{
+    margin-left: 10px;
+}

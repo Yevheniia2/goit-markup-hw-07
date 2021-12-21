@@ -313,11 +313,6 @@ nav{
     margin-right: 0;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
-}
-
 .our-profile__text{
     position: absolute;
     bottom: 0;
@@ -353,15 +348,6 @@ img{
 
 .our-team__item:first-child{
     margin-left: 0px;
-}
-
-.our-team__title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    color:var(--title-text-color);
-    margin-bottom: 50px;
 }
 
 .our-team__inscription{
@@ -414,6 +400,8 @@ img{
     background-color: var(--accent-color);
     fill: var(--main-background-color);
 }
+
+/* Regular customers styles */
 
 .regular-customers__title{
     text-align: center;
