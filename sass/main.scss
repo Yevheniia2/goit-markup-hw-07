@@ -1,3 +1,8 @@
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/variables';
+@import './utils/hidden';
+
 @import './base/commons';
 @import './base/reset';
 
@@ -19,8 +24,3 @@
 
 @import './portfolio/portfolio-menu';
 @import './portfolio/portfolio';
-
-@import './utils/hidden';
-@import './utils/mixins';
-@import './utils/placeholders';
-@import './utils/variables';

@@ -1,13 +1,13 @@
-.footer{
+.footer {
     display: flex;
     align-items: baseline;
 }
 
-.footer-contacts{
+.footer-contacts {
     flex-grow: 1;
 }
 
-.footer-logo{
+.footer-logo {
     @include font(26px, 700, 1.19, 0.03em);
     font-family: Raleway,sans-serif;
     text-decoration: none;
@@ -15,51 +15,53 @@
 }
 
 
-.footer-logo__white{
+.footer-logo__white {
     color:var(--primary-white-color);
 }
 
-.footer__item:not(:last-child){
+.footer__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.footer__address{
+.footer__address {
     text-decoration: none;
     color: var(--main-background-color);
 }
 
-.footer__link{
+.footer__link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
     transition-property: color;
     @extend %transition;
- &:hover,
- &:focus{
+
+    :hover,
+    &:focus {
     color: var(--accent-color);
- }
+    }
 }
 
-.footer__title{
+.footer__title {
     @include font(14px, 700, 1.14, 0.03em);
     font-style: normal;
     text-transform: uppercase;
     color:var(--main-background-color);
 }
 
-.footer__icons{
+.footer__icons {
     margin-left: 70px;
 }
 
-.footer-social-media{
+.footer-social-media {
     display: flex;
     justify-content: flex-start;
     margin-top: 20px;
- &:not(:last-child){
-    margin-right: 10px;
- }
 }
 
-.footer-social-media__link{
+.footer-social-media__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social-media__link {
     @extend %align-list;
     width: 44px;
     height: 44px;
@@ -68,8 +70,9 @@
     background-color: rgba(255, 255, 255, 0.1);
     transition-property: background-color;
     @extend %transition;
- &:hover,
- &:focus{
+
+    &:hover,
+    &:focus {
     background-color: var(--accent-color);
- }
+    }
 }

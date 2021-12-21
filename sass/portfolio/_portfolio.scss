@@ -1,20 +1,22 @@
-.portfolio{
+.portfolio {
     display: flex;
     flex-wrap: wrap;
 }
 
-.portfolio__item{
+.portfolio__item {
     margin-right: 30px;
     margin-bottom: 30px;
- &:nth-child(3n){
+
+    &:nth-child(3n) {
     margin-right: 0;
- }
- &:nth-child(n+7){
+    }
+
+    &:nth-child(n+7) {
     margin-bottom: 0;
- }
+    }
 }
 
-.portfolio__link{
+.portfolio__link {
     display: block;
     font-style: normal;
     text-decoration: none;
@@ -25,18 +27,19 @@
     cursor: pointer;
     transition-property: box-shadow;
     @extend %transition;
- &:hover,
- &focus{
+
+    &:hover,
+    &focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
- }
+    }
 }
 
-.portfolio__overlay{
+.portfolio__overlay {
     position: relative;
     overflow: hidden;
 }
 
-.portfolio__overlay-text{
+.portfolio__overlay-text {
     @include font(18px, 400, 1.56, 0.03em);
     position: absolute;
     width: 100%;
@@ -51,24 +54,24 @@
     transition-property: transform;
     @extend %transition;
     .portfolio__link:hover &,
-    .portfolio__link:focus &{
+    .portfolio__link:focus & {
     transform: translateY(0);
     }
 }
 
-.portfolio__inscription{
+.portfolio__inscription {
     padding: 20px 24px;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
 }
 
-.portfolio__title{
+.portfolio__title {
     @include font(18px, 700, 2.0, 0.06em);
     text-align: left;
     color: var(--title-text-color);
 }
-.portfolio__text{
+.portfolio__text {
     @include font(16px, 400, 1.88, 0.03em);
     text-align: left;
     color: var(--primary-text-color);

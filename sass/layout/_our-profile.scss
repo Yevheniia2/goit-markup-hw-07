@@ -1,17 +1,18 @@
-.our-profile{
+.our-profile {
     display: flex;
 }
 
-.our-profile__images{
+.our-profile__images {
     position: relative;
     margin-right: 30px;
     padding: 0 0 0 0;
- &:last-child{
+
+    &:last-child {
     margin-right: 0;
- }
+    }
 }
 
-.our-profile__text{
+.our-profile__text {
     @extend %align-list;
     @include font(14px, 700, 1.17, 0.03em);
     position: absolute;
