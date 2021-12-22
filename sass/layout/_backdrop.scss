@@ -10,10 +10,11 @@
     transition-property: opacity, visibility;
     @extend %transition;
     visibility: visible;
+
+    &.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
-.backdrop.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}

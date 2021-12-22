@@ -9,7 +9,7 @@
     background: #FFFFFF;
     
     &:first-child {
-    margin-left: 0px;
+        margin-left: 0px;
     }
 }
 
@@ -51,8 +51,8 @@
 
     &:hover,
     &:focus {
-    color: var(--main-background-color);
-    background-color: var(--accent-color);
-    fill: var(--main-background-color);
+        color: var(--main-background-color);
+        background-color: var(--accent-color);
+        fill: var(--main-background-color);
     }
 }

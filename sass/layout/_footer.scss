@@ -1,6 +1,8 @@
 .footer {
-    display: flex;
-    align-items: baseline;
+    background-color: var(--hero-background-color);
+    padding: 60px 0;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .footer-contacts {
@@ -19,6 +21,11 @@
     color:var(--primary-white-color);
 }
 
+.footer__box {
+    display: flex;
+    align-items: baseline;
+}
+
 .footer__item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -34,9 +41,9 @@
     transition-property: color;
     @extend %transition;
 
-    :hover,
+    &:hover,
     &:focus {
-    color: var(--accent-color);
+        color: var(--accent-color);
     }
 }
 
@@ -73,6 +80,6 @@
 
     &:hover,
     &:focus {
-    background-color: var(--accent-color);
+        background-color: var(--accent-color);
     }
 }
